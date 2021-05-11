@@ -6,7 +6,7 @@ spreadsheet_id = '1o_o4vil2VPIjO_XEECPz9yz3IAImEd8R1l9GQZkEeUY'
 
 def init():
     #authorization
-    gc = pygsheets.authorize(service_file='./credentials.json')
+    gc = pygsheets.authorize(service_file='./google-credentials.json')
 
     spreadsheet = gc.open_by_key(spreadsheet_id)
 
